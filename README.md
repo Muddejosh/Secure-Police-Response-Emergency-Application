@@ -1,112 +1,52 @@
-# Simple Supply Chain Simulation
+# Secure Police Response Emergency Application
 
-<!-- [Supply chain simulation using blockchain.](https://www.youtube.com/watch?v=2e-NGuT1PnY) -->
 ## Usage
 
 ### Login/SignIn:
 
-Login/SignIn in into the System(Compulsory), Authentication is done through firebase (Check firebase.js)
+Admin Login/SignIn in into the System(Compulsory), Authentication is done through phpmyAdmin (Check db_connect.php)
 
 ![Image Description](shots/login.png)
 
-### Orders drugs:
+### Review Reported Cases via Dashboard:
 
-This is the home screen where the customer views and orders drugs
+This is the dashboard screen where the police( Admin reviews Complaints)
 
-![Image Description](shots/home.png)
+![Image Description](shots/cases.png)
 
-### Administration activities:
+### Reporter Verification:
 
-The activities Recorded on the blockchain for verification. (You need to be logged into meta mask to continue) 
+The Genuine reporters can be marked as verified.
 
-![Image Description](shots/home2.png)
+![Image Description](shots/verif.png)
 
-### Account Errors:
+### Assigning responding team:
 
-Only the right blockchain account can do certain operations. Make sure to use the right account If confused checkout youtube
+The responsible Law enforcement team is assigned to deal with a given reported case
 
-![Image Description](shots/when-adding-user-fails.png)
+![Image Description](shots/responding.png)
 
-### Generate QR-Code:
+### Generate Police report:
 
-Manufacturer can generate QR-Code as well as download them and attach to products
+Once all constraints are satisfied, a report can be genrated and forwarded to Responsible parties
 
-![Image Description](shots/generating-QR-code.png)
-
-### Donloading Qr-code:
-
-Donloading Qr-code
-
-![Image Description](shots/donloading-qr-code.png)
-
-### Scanning:
-
-Scanning to verify QR-Code on product
-
-![Image Description](shots/scanning-QR-code-for-verification.png)
-
+![Image Description](shots/printing.png)
 
 
 ## 🔧 Setting up Local Development
 
 ### Step 1
 
-Open ganache UI/cli and configure truffle-config.js file. Not required for most cases.
+Download and run Xampp/Wamp on windows or Mampp om macOS
 
 ### Step 2
 
-Import the ganache local blockchain accounts in metamask using the mnemonic provided.
+Move project into htdocs 
 
 ### Step 3
 
-Clone the repo
-
-```bash
-git clone https://github.com/Muddejosh/Counterfeit-Drug-Detection-and-Prevention-Blockchain-System.git
-
-cd supply-chain-truffle-react
-```
+Import database via phpMyAdmin and Run the project through localhost 
 
 ### Step 4
 
-Compile and deploy the smart contract
-
-```bash
-npx truffle compile
-npx truffle migrate
-```
-
-> NOTE: If you make changes in the smart contract you have to redeploy it using `npx truffle migrate --reset`
-
-### Step 5
-
-Install `node_modules` using `yarn`
-
-```bash
-cd client
-yarn
-```
-
-Install `node_modules` using `npm`
-
-```bash
-cd client
-npm install
-```
-
-### Step 6
-
-Start the development server using `yarn`
-
-```bash
-yarn start
-```
-
-Start the development server using `npm`
-
-```bash
-npm start
-```
-
-The site is now running at `http://localhost:3000`!
-Open the source code and start editing!
+Modify to suite your needs. Its opensource afterall, a free lisence Haha. Goodluck
